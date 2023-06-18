@@ -1,5 +1,6 @@
-*, ::before, ::after
-{
+*,
+::before,
+::after {
 
     box-sizing: border-box;
     margin: 0;
@@ -9,8 +10,8 @@
 body {
     min-height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background: linear-gradient(to right, #36d1dc, #5b86e5);
-    padding: clamp(20px,5vw,50px)10px 10px;
+    background: linear-gradient(to top, #0028f3, #300c50);
+    padding: clamp(20px, 5vw, 50px)10px 10px;
 }
 
 .container {
@@ -20,9 +21,10 @@ body {
     padding: 25px;
     margin: 0 auto;
     border-radius: 5px;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
 
 }
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
@@ -31,9 +33,11 @@ h1 {
     font-weight: 400;
 
 }
+
 h1 span {
     font-weight: 700;
 }
+
 .inputs-container {
 
     display: flex;
@@ -46,25 +50,28 @@ h1 span {
     margin-left: 5px;
 
 }
-.inputs-container input{
+
+.inputs-container input {
     min-width: 350px;
     font-size: 18px;
     padding: 15px;
     border: none;
     border-bottom: 1px solid #333;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
 
 }
-.inputs-container input:focus{
+
+.inputs-container input:focus {
     outline: 1px solid #222222be;
 }
-.input-group:nth-child(2){
-margin-left: 20px;
+
+.input-group:nth-child(2) {
+    margin-left: 20px;
 
 }
 
-form button{
+form button {
     font-size: 20px;
     min-width: 200px;
     margin: 40px auto;
@@ -76,48 +83,52 @@ form button{
     color: #333;
     cursor: pointer;
     background-color: #fabe33;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.3);
-    
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+
 }
-form button:hover{
+
+form button:hover {
     background-color: #f2b527;
 }
-.info{
+
+.info {
     text-align: center;
 }
-.bmi-value{
+
+.bmi-value {
     font-size: 45px;
     margin-bottom: 5px;
     font-weight: bolder;
 }
 
-.result{
-font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px ;
+.result {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
 }
 
 @media(max-width:800px) {
-    .container{
+    .container {
         max-width: 600px;
     }
 
-    .inputs-container{
+    .inputs-container {
         flex-direction: column;
         align-items: center;
     }
-    .input-group:nth-child(2){
+
+    .input-group:nth-child(2) {
         margin-top: 30px;
         margin-left: 0;
-    
+
     }
-    .input-group{
+
+    .input-group {
         width: 100%;
     }
-    
+
     .input-group input {
         width: 100%;
         min-width: auto;
-    
-    }
-    }
 
+    }
+}
